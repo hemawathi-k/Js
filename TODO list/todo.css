@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+button.edit {
+  margin-right: 10px;
+}
+
+.cont {
+  margin: auto;
+  border: 2px solid rgb(6, 36, 70);
+  width: 800px; 
+  min-height: 300px; 
+  padding: 20px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(35, 137, 253);
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 40px;
+  color: black;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.todocont {
+  display: flex;
+  width: 100%; 
+  justify-content: center;
+}
+
+input {
+  width: 70%; 
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #535353;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  background-color: rgb(35, 253, 180);
+  color: rgb(17, 17, 17);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(123, 253, 84);
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #ddd;
+  text-align: center;
+}

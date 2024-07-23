@@ -1,0 +1,35 @@
+const myntraUserData=[
+  {
+    DiscountPrice:1299,
+    OriginalPrice:19999,
+    NoOfRatings:47551,
+    WatchName:"FireBoltPro"
+  },
+  {
+    DiscountPrice:1749,
+    OriginalPrice:14999,
+    NoOfRatings:63428,
+    WatchName:"PhoenixUltra"
+  },
+  {
+    DiscountPrice:1199,
+    OriginalPrice:4999,
+    NoOfRatings:35978,
+    WatchName:"NoisePlus"
+  },
+  {
+    DiscountPrice:1499,
+    OriginalPrice:3765,
+    NoOfRatings:18679,
+    WatchName:"Fastrack"
+  },
+  {
+    DiscountPrice:5463,
+    OriginalPrice:7865,
+    NoOfRatings:5468,
+    WatchName:"Tozo"
+  }
+]
+console.log(myntraUserData);
+console.log(myntraUserData[3]);
+console.log(myntraUserData[1].NoOfRatings);

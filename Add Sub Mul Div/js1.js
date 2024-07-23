@@ -1,0 +1,10 @@
+let number1 = 10;
+let number2 = 5;
+let Addition = number1 + number2;
+console.log("Addition:",Addition);
+let Subtraction = number1 - number2;
+console.log("Subtraction:", Subtraction);
+let Multiplication = number1 * number2;
+console.log(" Multiplication:", Multiplication);
+let Division = number1 / number2;
+console.log("Division:", Division);
