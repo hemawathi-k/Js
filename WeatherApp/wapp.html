@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="wapp.css">
+</head>
+<body>
+  <main>
+    <p>Enter Country/City</p>
+    <div class="container">
+      <select>
+        <option value="" disabled selected>Location</option>
+        <option value="chennai">Chennai</option>
+        <!-- Add more options here -->
+      </select>
+      <button onclick="weather()">Search</button>
+    </div>
+    <section>
+      <div class="left">
+        <p id="day"></p>
+        <p id="date"></p>
+        <p id="icon"></p>
+        <p id="temp"></p>
+        <p id="climate"></p>
+      </div>
+      <div class="right">
+
+      </div>
+    </section>
+  </main>
+
+  <script src="wapp.js"></script>
+</body>
+</html>
