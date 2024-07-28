@@ -1,6 +1,12 @@
 async function wapp(location) {
   try {
     const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=f6a3011027de444aa6521129242707&q=${location}`);
+    
+  
+    if (!response.ok) {
+      throw new Error('Invalid location');
+    }
+    
     const data = await response.json();
     console.log(data);
 
@@ -16,15 +22,29 @@ async function wapp(location) {
     document.getElementById('ws').innerText = `${data.current.wind_kph} kph`;
     document.getElementsByClassName('icon')[1].innerHTML = `<img src="${data.current.condition.icon}" alt="${data.current.condition.text}">`;
 
+  
+    document.getElementById('error-message').style.display = 'none';
+
   } catch (error) {
     console.error('Error fetching weather data:', error);
+
+    
+    document.getElementById('error-message').style.display = 'block';
+    document.getElementById('error-message').innerText = 'Invalid location. Please enter a valid country/city name.';
   }
 }
 
 document.getElementById('search-btn').addEventListener('click', () => {
   const cityInput = document.getElementById('city-input');
-  const location = cityInput.value || 'Chennai';
-  wapp(location);
+  const location = cityInput.value.trim();
+  const errorMessage = document.getElementById('error-message');
+
+  if (!location) {
+    errorMessage.style.display = 'block';
+    errorMessage.innerText = 'Please enter a valid location.';
+  } else {
+    wapp(location);
+  }
 });
 
 window.onload = () => {
