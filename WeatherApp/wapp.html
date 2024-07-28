@@ -3,30 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Weather App</title>
   <link rel="stylesheet" href="wapp.css">
 </head>
 <body>
   <main>
     <p>Enter Country/City</p>
     <div class="container">
-      <select>
-        <option value="" disabled selected>Location</option>
-        <option value="chennai">Chennai</option>
-        <!-- Add more options here -->
-      </select>
-      <button onclick="weather()">Search</button>
+      <input type="text" id="city-input" placeholder="Enter location">
+      <button id="search-btn">Search</button>
     </div>
     <section>
       <div class="left">
         <p id="day"></p>
         <p id="date"></p>
-        <p id="icon"></p>
+        <p class="icon"></p>
         <p id="temp"></p>
         <p id="climate"></p>
       </div>
       <div class="right">
-
+        <div class="top">
+          <div class="t1">
+           <p>Name</p>
+           <p>Temp</p>
+           <p>Humidity</p>
+           <p>WindSpeed</p>
+          </div>
+          <div class="t2">
+            <p id="name"></p>
+            <p id="Temp"></p>
+            <p id="humidity"></p>
+            <p id="ws"></p>
+          </div>
+        </div>
+        <div class="bottom">
+          <p class="icon"></p>
+        </div>
       </div>
     </section>
   </main>
